@@ -2,7 +2,7 @@
 
 ## Synopsis
 
-TennisScore is an eAndroid app to count points in a tennis match.
+TennisScore is an Android app to count points in a tennis match.
 
 ## Code Example
 
