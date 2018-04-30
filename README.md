@@ -4,7 +4,9 @@
 
 Tennis Score is an Android app to count points in a tennis match.
 
-![Animated Tennis Score app](readme_assets/tennis_animated.gif)
+<p align="center">
+ <kbd><img width="300" height="533" src="readme_assets/tennis_animated.gif"></kbd>
+</p>
 
 ## Code Example
 
