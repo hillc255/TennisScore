@@ -8,6 +8,7 @@ import android.widget.ToggleButton;
 
 public class MainActivity extends AppCompatActivity {
 
+    //Global String variables declared
     String scoreTeamA = "";
     String scoreTeamB = "";
     String scoreAB = "";

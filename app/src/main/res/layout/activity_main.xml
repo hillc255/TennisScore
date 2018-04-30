@@ -9,156 +9,156 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:baselineAligned="false"
-        android:orientation="horizontal">
-
-        <!-- Team A score column -->
-
         <LinearLayout
-            android:layout_width="@dimen/noWidth"
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
+            android:background="@color/white"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="center"
-                android:padding="@dimen/paddingLarge"
-                android:text="@string/TeamA"
-                android:textColor="@color/colorText"
-                android:textSize="@dimen/textVSmall"
-                android:textStyle="bold" />
+            <!-- Team A score column -->
 
-            <TextView
-                android:id="@+id/team_a_score"
-                android:layout_width="match_parent"
+            <LinearLayout
+                android:layout_width="@dimen/noWidth"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-light"
-                android:gravity="center"
-                android:padding="@dimen/paddingSmall"
-                android:text=""
-                android:textColor="@color/colorText"
-                android:textSize="@dimen/textLarge" />
+                android:layout_weight="1"
+                android:orientation="vertical">
 
-            <Button
-                android:id="@+id/button_ida1"
-                android:layout_width="match_parent"
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:padding="@dimen/paddingLarge"
+                    android:text="@string/TeamA"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/textVSmall"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/team_a_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:padding="@dimen/paddingSmall"
+                    android:text=""
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/textLarge" />
+
+                <Button
+                    android:id="@+id/button_ida1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/marginSmall"
+                    android:layout_marginLeft="@dimen/marginVLarge"
+                    android:layout_marginRight="@dimen/marginVLarge"
+                    android:layout_marginTop="@dimen/marginLarge"
+                    android:onClick="addTeamA"
+                    android:text="@string/plus"
+                    android:textSize="@dimen/textSmall" />
+            </LinearLayout>
+
+
+            <!-- Middle column -->
+
+            <LinearLayout
+                android:layout_width="@dimen/noWidth"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/marginSmall"
-                android:layout_marginLeft="@dimen/marginVLarge"
-                android:layout_marginRight="@dimen/marginVLarge"
-                android:layout_marginTop="@dimen/marginLarge"
-                android:onClick="addTeamA"
-                android:text="@string/plus"
-                android:textSize="@dimen/textSmall" />
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ToggleButton
+                    android:id="@+id/togglebutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="changeTeam"
+                    android:textOff="@string/serverA"
+                    android:textOn="@string/serverB"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/teams_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/paddingLarge"
+                    android:text="@string/love"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/textSmall"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/rackets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/tennisicon"
+                    android:gravity="center_horizontal"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/rackets" />
+
+            </LinearLayout>
+
+            <!-- Team B score core column -->
+            <LinearLayout
+                android:layout_width="@dimen/noWidth"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:padding="@dimen/paddingLarge"
+                    android:text="@string/TeamB"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/textVSmall"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/team_b_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:padding="@dimen/paddingSmall"
+                    android:text=""
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/textLarge" />
+
+                <Button
+                    android:id="@+id/button_idb1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/marginSmall"
+                    android:layout_marginLeft="@dimen/marginVLarge"
+                    android:layout_marginRight="@dimen/marginVLarge"
+                    android:layout_marginTop="@dimen/marginLarge"
+                    android:onClick="addTeamB"
+                    android:text="@string/plus"
+                    android:textSize="@dimen/textSmall" />
+
+            </LinearLayout>
+
         </LinearLayout>
-
-
-        <!-- Middle column -->
-
-        <LinearLayout
-            android:layout_width="@dimen/noWidth"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <ToggleButton
-                android:id="@+id/togglebutton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:onClick="changeTeam"
-                android:textOff="@string/serverA"
-                android:textOn="@string/serverB"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/teams_score"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-light"
-                android:gravity="center"
-                android:paddingTop="@dimen/paddingLarge"
-                android:text="@string/love"
-                android:textColor="@color/colorText"
-                android:textSize="@dimen/textSmall"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:id="@+id/rackets"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:contentDescription="@string/tennisicon"
-                android:gravity="center_horizontal"
-                android:scaleType="centerInside"
-                android:src="@drawable/rackets" />
-
-        </LinearLayout>
-
-        <!-- Team B score core column -->
-        <LinearLayout
-            android:layout_width="@dimen/noWidth"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="center"
-                android:padding="@dimen/paddingLarge"
-                android:text="@string/TeamB"
-                android:textColor="@color/colorText"
-                android:textSize="@dimen/textVSmall"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/team_b_score"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-light"
-                android:gravity="center"
-                android:padding="@dimen/paddingSmall"
-                android:text=""
-                android:textColor="@color/colorText"
-                android:textSize="@dimen/textLarge" />
-
-            <Button
-                android:id="@+id/button_idb1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/marginSmall"
-                android:layout_marginLeft="@dimen/marginVLarge"
-                android:layout_marginRight="@dimen/marginVLarge"
-                android:layout_marginTop="@dimen/marginLarge"
-                android:onClick="addTeamB"
-                android:text="@string/plus"
-                android:textSize="@dimen/textSmall" />
-
-        </LinearLayout>
-
-    </LinearLayout>
 
         <!-- Photo below -->
 
-    <ImageView
-        android:id="@+id/tennisteam"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/photoLayout"
-        android:layout_below="@+id/linearLayout"
-        android:contentDescription="@string/tennis"
-        android:layout_centerHorizontal="true"
-        android:scaleType="fitXY"
-        android:src="@drawable/tennis1" />
+        <ImageView
+            android:id="@+id/tennisteam"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/photoLayout"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/tennis"
+            android:scaleType="fitXY"
+            android:src="@drawable/tennis1" />
 
-</RelativeLayout>
+    </RelativeLayout>
 
 </ScrollView>
