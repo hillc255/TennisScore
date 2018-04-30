@@ -16,7 +16,8 @@ Tennis Score is an Android app to count points in a tennis match.
 
 ## Motivation
 
-This was an exercise in creating a simple number counting Android app.
+This was the second exercise in the "Grow with Google 2018 Android Basic Development" program with Udacity.  
+The purpose of the exercise was to create a simple number counting Android app.
 
 ## Installation
 
